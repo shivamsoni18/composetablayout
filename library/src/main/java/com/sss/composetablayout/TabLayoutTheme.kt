@@ -1,4 +1,4 @@
-package com.promact.tablayout
+package com.sss.composetablayout
 
 import androidx.compose.ui.graphics.Color
 

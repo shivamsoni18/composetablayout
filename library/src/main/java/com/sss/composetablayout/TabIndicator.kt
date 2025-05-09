@@ -1,4 +1,4 @@
-package com.promact.tablayout
+package com.sss.composetablayout
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDp

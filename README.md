@@ -29,7 +29,7 @@ Add the dependency:
 
 ```groovy
 dependencies {
-    implementation 'com.github.sss:tablayout:1.0.0'
+    implementation 'com.github.sss:composetablayout:1.0.0'
 }
 ```
 
@@ -45,7 +45,7 @@ enum class MyTabs : TabPage {
     PROFILE,
     SETTINGS;
 
-    override val ordinal: Int
+    override val tabIndex: Int
         get() = super.ordinal
 }
 ```

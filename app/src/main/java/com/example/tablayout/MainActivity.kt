@@ -25,9 +25,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.promact.tablayout.CustomTabRow
-import com.promact.tablayout.CustomTabRowWithTitles
-import com.promact.tablayout.TabPage
+import com.sss.composetablayout.CustomTabRow
+import com.sss.composetablayout.CustomTabRowWithTitles
+import com.sss.composetablayout.TabPage
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
