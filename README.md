@@ -98,10 +98,14 @@ CustomTabRowWithTitles(
 
 The repository includes a sample app that demonstrates how to use the library.
 
+![Screenshot_20250510_031958_resized](https://github.com/user-attachments/assets/70a3ba1f-a0d7-4af5-a178-41bd64554319)
+
+
+
 ## License
 
 ```
-Copyright 2023 Promact
+Copyright 2023 SSS
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
