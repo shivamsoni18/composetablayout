@@ -1,0 +1,3 @@
+rootProject.name = "TabLayoutLib"
+include ':app'
+include ':library' 
