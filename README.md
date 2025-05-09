@@ -1,14 +1,22 @@
-# TabLayout Library
+# ComposeTabLayout
 
-A customizable tab layout library for Android using Jetpack Compose.
+[![Release](https://jitpack.io/v/shivamsoni18/composetablayout.svg)](https://jitpack.io/#shivamsoni18/composetablayout)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+A modern, customizable tab layout library for Android built with Jetpack Compose. This library provides an easy way to implement beautiful animated tabs in your Compose UI with minimal code.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/70a3ba1f-a0d7-4af5-a178-41bd64554319" width="300" alt="ComposeTabLayout Demo">
+</p>
 
 ## Features
 
-- Easy-to-use animated tab layout
-- Support for enum-based tabs or string-based tabs
-- Customizable colors, styles, and animations
-- Smooth transition animations between tabs
-- Compatible with any Android project using Jetpack Compose
+- ✨ Easy-to-use animated tab layout
+- 🔄 Support for both enum-based tabs and string-based tabs
+- 🎨 Highly customizable colors, styles, and animations
+- 🚀 Smooth transition animations between tabs
+- 📱 Compatible with any Android project using Jetpack Compose
+- 🧩 Lightweight and modular design
 
 ## Installation
 
@@ -25,11 +33,24 @@ allprojects {
 }
 ```
 
-Add the dependency:
+Or in settings.gradle for newer projects:
+
+```groovy
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the dependency to your module's build.gradle:
 
 ```groovy
 dependencies {
-    implementation 'com.github.shivamsoni18:composetablayout:1.0.0'
+    implementation 'com.github.shivamsoni18:composetablayout:1.0.1'
 }
 ```
 
@@ -65,6 +86,8 @@ CustomTabRow(
 
 ### Using String-Based Tabs
 
+For simple cases where you just need string tabs:
+
 ```kotlin
 val tabTitles = listOf("Home", "Profile", "Settings")
 var selectedTabIndex by remember { mutableStateOf(0) }
@@ -86,21 +109,29 @@ CustomTabRowWithTitles(
     selectedTabIndex = selectedTabIndex,
     onTabSelected = { selectedTabIndex = it },
     tabTitles = tabTitles,
-    backgroundColor = Color(0xFFECECEC),
-    indicatorColor = Color(0xFF6200EE),
-    textColor = Color(0xFF666666),
-    selectedTextColor = Color.White,
+    backgroundColor = Color(0xFFECECEC),          // Background color of tab row
+    indicatorColor = Color(0xFF6200EE),           // Color of the selected tab indicator
+    textColor = Color(0xFF666666),                // Color of unselected tab text
+    selectedTextColor = Color.White,              // Color of selected tab text
+    tabCornerShape = RoundedCornerShape(20.dp),   // Corner shape for the tab row
+    indicatorCornerShape = RoundedCornerShape(4.dp), // Corner shape for the indicator
+    segmentedStyle = false,                       // Whether to use segmented control style
     modifier = Modifier.fillMaxWidth()
 )
 ```
 
 ## Sample App
 
-The repository includes a sample app that demonstrates how to use the library.
+The repository includes a sample app that demonstrates how to use the library with both enum-based tabs and string-based tabs. Run the sample app to see the tabs in action.
 
-![Screenshot_20250510_031958_resized](https://github.com/user-attachments/assets/70a3ba1f-a0d7-4af5-a178-41bd64554319)
+## Requirements
 
+- Minimum SDK version: 21 (Android 5.0)
+- Jetpack Compose compatible project
 
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please feel free to submit a pull request.
 
 ## License
 
