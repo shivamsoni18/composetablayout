@@ -59,7 +59,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.sss'
+                groupId = 'com.github.shivamsoni18'
                 artifactId = 'composetablayout'
                 version = '1.0.0'
             }
